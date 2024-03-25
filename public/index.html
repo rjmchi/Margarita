@@ -42,7 +42,12 @@
             </div>
             <div class="grid grid-cols-3 w-80 ml-6">
                 <label for="people">People </label>
-                <input type="text" name="amount" id="people" value="4" class="border border-gray-300 rounded-lg mx-1 p-1">
+                <input type="text" name="people" id="people" value="4" class="border border-gray-300 rounded-lg mx-1 p-1">
+            </div>
+
+            <div class="grid grid-cols-3 w-80 ml-6">
+                <label for="drinks">Drinks per person </label>
+                <input type="text" name="drinks" id="drinks" value="1" class="border border-gray-300 rounded-lg mx-1 p-1">
             </div>
 
             <!-- <div class="grid grid-cols-3 w-80 ml-6">
@@ -67,6 +72,8 @@
         var tequila = document.getElementById('tequila').value;
         var controy = document.getElementById('controy').value;
         var lime = document.getElementById('lime').value;
+        var drinks = document.getElementById('drinks').value;
+        total *= drinks;
 
         const ingredient_names = ['Tequila', 'Controy', 'Lime', 'Water'];
         var ingredient_amounts=[parseFloat(tequila), parseFloat(controy), parseFloat(lime), parseFloat(water)];
